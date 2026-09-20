@@ -1,4 +1,8 @@
 using System.Threading;
+using CombatSystem.Combat;
+using CombatSystem.Core;
+
+namespace CombatSystem.Characters;
 
 class Vampire : Enemy
 {
@@ -8,13 +12,13 @@ class Vampire : Enemy
     private const float StartingHealth = 300f;
     private const float ClawDamage = 23f;
     private const float FangDamage = 25f;
-    private const float fangDamageMultiplier = 1.75f;
+    private const float FangDamageMultiplier = 1.75f;
 
     public Vampire()
         : base("Regis", StartingHealth)
     {
         _claws = new EnemyWeapon("Claws",  ClawDamage);
-        _fangs = new VampireFangs("Fangs", FangDamage, fangDamageMultiplier);
+        _fangs = new VampireFangs("Fangs", FangDamage, FangDamageMultiplier);
 
         _enemyWeapons.Add(_claws);
         // ! _enemyWeapons.Add(_fangs); ! //
@@ -38,12 +42,12 @@ class Vampire : Enemy
         float totalDamage      = 0;
         float fangAttackDamage = 0;
 
-        float currentMultiplier = fangDamageMultiplier;
+        float currentMultiplier = FangDamageMultiplier;
 
         // damage calculation
         for (int i = 0; i < 3; i++)
         {
-            fangAttackDamage = _fangs.Damage * fangDamageMultiplier;
+            fangAttackDamage = _fangs.Damage * FangDamageMultiplier;
 
             target.TakeDamage(fangAttackDamage);
 

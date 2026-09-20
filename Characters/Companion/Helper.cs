@@ -1,3 +1,7 @@
+using CombatSystem.Core;
+
+namespace CombatSystem.Characters;
+
 class Helper : Companion
 {
     private const float StartingHealth = 25f;

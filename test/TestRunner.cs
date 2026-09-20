@@ -1,6 +1,12 @@
 using System;
 using System.IO;
 using System.Linq;
+using CombatSystem.Core;
+using CombatSystem.Items;
+using CombatSystem.Combat;
+using CombatSystem.Characters;
+
+namespace CombatSystem.Tests;
 
 static class TestRunner
 {

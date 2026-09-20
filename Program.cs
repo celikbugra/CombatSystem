@@ -1,4 +1,7 @@
-﻿if (args.Contains("--test"))
+﻿using CombatSystem.Characters;
+using CombatSystem.Tests;
+
+if (args.Contains("--test"))
 {
     TestRunner.RunAllTests();
     return;

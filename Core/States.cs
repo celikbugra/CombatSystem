@@ -1,3 +1,5 @@
+namespace CombatSystem.Core;
+
 public enum PlayerState
 {
     None,

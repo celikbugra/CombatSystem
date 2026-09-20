@@ -1,3 +1,8 @@
+using CombatSystem.Combat;
+using CombatSystem.Core;
+
+namespace CombatSystem.Characters;
+
 abstract class Enemy : Character
 {
     private List<int> _enemyAttackCountList = new List<int>();

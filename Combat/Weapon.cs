@@ -1,3 +1,5 @@
+namespace CombatSystem.Combat;
+
 abstract class Weapon
 {
     public Weapon(string name, float damage)

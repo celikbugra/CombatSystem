@@ -1,3 +1,5 @@
+namespace CombatSystem.Core;
+
 static class Config
 {
     private static List<AttackerType> _attackHistory = new List<AttackerType>();

@@ -1,3 +1,7 @@
+using CombatSystem.Core;
+
+namespace CombatSystem.Characters;
+
 abstract class Companion : Character
 {
     public Companion(string name, float health)

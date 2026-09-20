@@ -1,3 +1,5 @@
+namespace CombatSystem.Items;
+
 abstract class Item
 {
     public Item(string name)

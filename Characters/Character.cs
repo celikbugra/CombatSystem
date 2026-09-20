@@ -1,3 +1,7 @@
+using CombatSystem.Core;
+
+namespace CombatSystem.Characters;
+
 abstract class Character : IDamageable
 {
     public Character(string name, float health)

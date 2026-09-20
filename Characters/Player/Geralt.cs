@@ -1,3 +1,8 @@
+using CombatSystem.Combat;
+using CombatSystem.Core;
+
+namespace CombatSystem.Characters;
+
 class Geralt : Player
 {
     private PlayerWeapon _silverSword;

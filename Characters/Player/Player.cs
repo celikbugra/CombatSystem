@@ -1,3 +1,9 @@
+using CombatSystem.Combat;
+using CombatSystem.Core;
+using CombatSystem.Items;
+
+namespace CombatSystem.Characters;
+
 abstract class Player : Character
 {
     public Companion? Companion { get; protected set; }
