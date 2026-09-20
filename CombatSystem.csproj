@@ -5,9 +5,6 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
-    <WarningLevel>0</WarningLevel>
-    <EnableNETAnalyzers>false</EnableNETAnalyzers>
   </PropertyGroup>
 
 </Project>

@@ -167,7 +167,7 @@ abstract class Player : Character
 
         Health -= amount;
 
-        while (CanCompanionHeal)
+        while (CanCompanionHeal && Companion != null)
         {
             ChangeHealthState(HealthState.Wounded);
             Console.WriteLine($"HealthState: {CurrentHealthState}");
