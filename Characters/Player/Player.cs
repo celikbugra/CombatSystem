@@ -3,11 +3,11 @@ abstract class Player : Character
     public Companion? Companion { get; protected set; }
     private List<int> _playerAttackCountList = new List<int>();
     protected List<PlayerWeapon> _playerWeapons = new List<PlayerWeapon>();
-    protected List<Items> _playerItems = new List<Items>();
+    protected List<Item> _playerItems = new List<Item>();
 
-    public void AddItem(Items item)
+    public void AddItem(Item item)
     {
-        foreach (Items existingItem in _playerItems)
+        foreach (Item existingItem in _playerItems)
         {
             if (existingItem.Name == item.Name)
             {
@@ -21,7 +21,7 @@ abstract class Player : Character
 
     public void ShowItems()
     {
-        foreach (Items item in _playerItems)
+        foreach (Item item in _playerItems)
         {
             Console.WriteLine($"{item.Name}");
         }

@@ -1,6 +1,6 @@
-abstract class Items
+abstract class Item
 {
-    public Items(string name)
+    public Item(string name)
     {
         Name = name;
     }
@@ -8,7 +8,7 @@ abstract class Items
     public string Name { get; protected set; }
 }
 
-class HealingPotion : Items
+class HealingPotion : Item
 {
     public float HealAmount { get; protected set; }
 
@@ -19,7 +19,7 @@ class HealingPotion : Items
     }
 }
 
-class ValeBloodPotion : Items
+class ValeBloodPotion : Item
 {
     public float Toxicity { get; protected set; }
     public ValeBloodPotion(float toxicity)
